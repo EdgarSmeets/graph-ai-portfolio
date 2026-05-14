@@ -25,7 +25,14 @@ body {
 .hero {
   position:relative;
   height:520px;
-  background:url('https://images.unsplash.com/photo-1581092795360-fd1ca04f0952') center/cover no-repeat;
+  background: url('https://github.com/EdgarSmeets/graph-ai-portfolio/blob/main/zw%20st%201.JPG?raw=true') center/cover no-repeat;
+}
+
+.hero::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.45); /* overlay for readability */
 }
 
 .hero-overlay {
@@ -36,8 +43,9 @@ body {
   background:white;
   padding:25px;
   width:320px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.2);
-  border-left:6px solid #22a564; /* GREEN ACCENT */
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+  border-left:6px solid #22a564;
+  z-index:2;
 }
 
 .hero-overlay h2 {
@@ -57,22 +65,23 @@ h2 {
   color:#1f4037;
 }
 
-/* CARDS */
+/* GRID */
 .grid {
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
   gap:25px;
 }
 
+/* CARDS */
 .card {
   background:white;
   padding:20px;
   border-radius:8px;
   box-shadow:0 4px 12px rgba(0,0,0,0.08);
-  border-top:4px solid #22a564; /* GREEN ACCENT */
+  border-top:4px solid #22a564;
 }
 
-/* COURSE MODULE */
+/* COURSE */
 .module {
   border-left:5px solid #22a564;
   padding-left:15px;
@@ -87,22 +96,12 @@ h2 {
   border-top:4px solid #22a564;
 }
 
-/* LINKS */
-a {
-  color:#22a564;
-  text-decoration:none;
-}
-a:hover {
-  text-decoration:underline;
-}
-
 /* FOOTER */
 footer {
   text-align:center;
   padding:40px;
   background:#111;
   color:white;
-  font-size:14px;
 }
 </style>
 
@@ -123,7 +122,7 @@ footer {
       <strong>Generative AI for Work & Research</strong> course.
     </p>
     <p>
-      I explore how AI can improve clinical research workflows,
+      Exploring how AI improves clinical research workflows,
       reporting, and operational efficiency.
     </p>
   </div>
@@ -140,8 +139,8 @@ footer {
     <div class="card">
       <h3>Profile</h3>
       <p>
-        Edgar F. Smeets, PhD — independent clinical research consultant
-        with over 20 years of experience in pharma, biotech, and academia.
+        Edgar F. Smeets, PhD — independent clinical research consultant 
+        with extensive experience across pharma, biotech, and academia.
       </p>
     </div>
 
@@ -149,15 +148,15 @@ footer {
       <h3>Expertise</h3>
       <p>
         Risk-based monitoring, clinical trial execution,
-        quality assurance, and project management.
+        QA, and global project coordination.
       </p>
     </div>
 
     <div class="card">
-      <h3>Focus</h3>
+      <h3>AI Focus</h3>
       <p>
-        Applying Generative AI to streamline documentation,
-        analysis, and operational workflows in research.
+        Applying Generative AI to enhance documentation,
+        data analysis, and research workflows.
       </p>
     </div>
 
@@ -171,46 +170,19 @@ footer {
   <h2>About the course</h2>
 
   <p>
-    An 8-week live cohort focused on responsible use of
-    no-code AI tools for productivity, research, and automation.
+    An 8-week cohort exploring responsible use of Generative AI
+    for productivity, automation, and research.
   </p>
 
   <div class="grid">
 
-    <div class="card module">
-      <strong>Module 1</strong>
-      <p>Websites, documents & presentations</p>
-    </div>
-
-    <div class="card module">
-      <strong>Module 2</strong>
-      <p>AI automated data analysis</p>
-    </div>
-
-    <div class="card module">
-      <strong>Module 3</strong>
-      <p>Research and text analysis</p>
-    </div>
-
-    <div class="card module">
-      <strong>Module 4</strong>
-      <p>Custom GPTs and chatbots</p>
-    </div>
-
-    <div class="card module">
-      <strong>Module 5</strong>
-      <p>Task automation workflows</p>
-    </div>
-
-    <div class="card module">
-      <strong>Module 6</strong>
-      <p>Communication and outreach</p>
-    </div>
-
-    <div class="card module">
-      <strong>Module 7</strong>
-      <p>Capstone project</p>
-    </div>
+    <div class="card module"><strong>Module 1</strong><p>Websites & documents</p></div>
+    <div class="card module"><strong>Module 2</strong><p>Data analysis</p></div>
+    <div class="card module"><strong>Module 3</strong><p>Text analysis</p></div>
+    <div class="card module"><strong>Module 4</strong><p>Custom GPTs</p></div>
+    <div class="card module"><strong>Module 5</strong><p>Automation</p></div>
+    <div class="card module"><strong>Module 6</strong><p>Communication</p></div>
+    <div class="card module"><strong>Module 7</strong><p>Capstone</p></div>
 
   </div>
 
@@ -223,13 +195,13 @@ footer {
 
   <div class="grid">
 
-    <div class="week"><strong>Week 1:</strong> Portfolio + prompting</div>
+    <div class="week"><strong>Week 1:</strong> Portfolio</div>
     <div class="week"><strong>Week 2:</strong> Data analysis</div>
     <div class="week"><strong>Week 3:</strong> Reporting</div>
     <div class="week"><strong>Week 4:</strong> Text analysis</div>
-    <div class="week"><strong>Week 5:</strong> Custom GPT</div>
+    <div class="week"><strong>Week 5:</strong> GPT tools</div>
     <div class="week"><strong>Week 6:</strong> Automation</div>
-    <div class="week"><strong>Week 7:</strong> Communication</div>
+    <div class="week"><strong>Week 7:</strong> Outreach</div>
     <div class="week"><strong>Week 8:</strong> Capstone</div>
 
   </div>
@@ -242,3 +214,4 @@ footer {
 
 </body>
 </html>
+``
