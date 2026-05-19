@@ -32,7 +32,7 @@ body {
   content:"";
   position:absolute;
   inset:0;
-  background:rgba(0,0,0,0.45); /* overlay for readability */
+  background:rgba(0,0,0,0.45);
 }
 
 .hero-overlay {
@@ -94,6 +94,18 @@ h2 {
   border-radius:6px;
   border:1px solid #ddd;
   border-top:4px solid #22a564;
+}
+
+.week a {
+  display:block;
+  margin-top:8px;
+  color:#22a564;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.week a:hover {
+  text-decoration:underline;
 }
 
 /* FOOTER */
@@ -196,7 +208,15 @@ footer {
   <div class="grid">
 
     <div class="week"><strong>Week 1:</strong> Portfolio</div>
-    <div class="week"><strong>Week 2:</strong> Data analysis</div>
+
+    <div class="week">
+      <strong>Week 2:</strong> Data analysis<br>
+      Workshop 2: Automated Data Analysis
+      <a href="https://github.com/EdgarSmeets/graph-ai-portfolio/blob/main/report.pdf" target="_blank">
+        View report →
+      </a>
+    </div>
+
     <div class="week"><strong>Week 3:</strong> Reporting</div>
     <div class="week"><strong>Week 4:</strong> Text analysis</div>
     <div class="week"><strong>Week 5:</strong> GPT tools</div>
@@ -214,4 +234,3 @@ footer {
 
 </body>
 </html>
-``
